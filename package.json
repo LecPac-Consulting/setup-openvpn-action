@@ -1,0 +1,27 @@
+{
+  "name": "setup-openvpn-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to set up OpenVPN connection",
+  "main": "src/setup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "openvpn"
+  ],
+  "author": "LecPac Consulting",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LecPac-Consulting/setup-openvpn-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LecPac-Consulting/setup-openvpn-action/issues"
+  },
+  "homepage": "https://github.com/LecPac-Consulting/setup-openvpn-action#readme"
+}

@@ -1,0 +1,18 @@
+name: Set up OpenVPN
+description: Install OpenVPN and start the VPN connection (by LecPac Consulting)
+branding:
+  icon: star
+  color: green
+inputs:
+  openvpn_config_base64:
+    description: Base64-encoded OpenVPN client configuration
+    required: true
+  openvpn_tmp_dir:
+    description: Directory to store OpenVPN configuration file, PID file, and log file.
+    required: false
+    default: /tmp/openvpn
+
+runs:
+  using: "node20"
+  main: "src/setup.js"
+  post: "src/shutdown.js"
